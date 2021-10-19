@@ -6,17 +6,17 @@ import Article from "./components/Article";
 
 function App() {
   return (
-    <Switch>
-      <div className="App">
-        <Header />
+    <div className="App">
+      <Header />
+      <Switch>
         <Route exact path="/">
           <ArticlesList />
         </Route>
         <Route exact path="/article">
           <Article />
         </Route>
-      </div>
-    </Switch>
+      </Switch>
+    </div>
   );
 }
 
