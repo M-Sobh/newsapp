@@ -3,7 +3,7 @@
 export default function TopicsFilter() {
     return (
         <div>
-            <select>
+            <select className='topic-filter'>
                 <option>--Please Select a Topic--</option>
                 <option></option>
             </select>

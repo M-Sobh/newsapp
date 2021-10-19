@@ -3,9 +3,14 @@ import TopicsFilter from "./TopicsFilter"
 
 
 const ArticlesList = ()=>{
-    return  <section>
+    return  <section className="articles-list">
         <TopicsFilter/>
         <ArticleSummary/>
+        <ArticleSummary/>
+        <ArticleSummary/>
+        <ArticleSummary/>
+
+
     </section>
     
 }

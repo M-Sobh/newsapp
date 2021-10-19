@@ -7,8 +7,7 @@ export default function Comments() {
             <h2>Comments</h2>
             <Comment/>
             <Comment/>
-            <Comment/>
-            <Comment/>
+            
 
         </div>
     )

@@ -1,4 +1,6 @@
  const Header = () => {
-    return <h1>Logo</h1>
+    return <section className ='header'>
+            <h1>Logo</h1>
+        </section>
 }
 export default Header;
