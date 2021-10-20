@@ -2,7 +2,7 @@ import ArticleInfo from "./ArticleInfo";
 import Comments from "./Comments";
 import {useState, useEffect} from 'react';
 import { getArticleById, getCommentsByArticle } from "../utils/api";
-import {Link, useParams} from "react-router-dom";
+import { useParams} from "react-router-dom";
 
 
 export default function Article() {
@@ -23,10 +23,10 @@ export default function Article() {
     },[article_id])
 
     return (
-        <Link to = '/article'>
+        <section>
             <ArticleInfo articleInfoCard={articleInfoCard}/>
             <Comments commentsCard={commentsCard}/>
             
-        </Link>
+        </section>
     )
 }
