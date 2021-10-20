@@ -1,4 +1,3 @@
-
 export default function TopicsFilter({ topics, setTopic}) {
 
    const topicHandler = (e) =>{

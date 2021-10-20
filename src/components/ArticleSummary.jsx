@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 
 export default function ArticleSummary({articlesList}) {
     return (      
@@ -6,11 +7,13 @@ export default function ArticleSummary({articlesList}) {
             {
                 articlesList.map((article) => {
                     return(
-                    <section className='article-summary'>
+                    <section className='article-summary' key ={article.title}>
                         <h3>{article.title}</h3>
                         <h4>Author: {article.author}</h4>
                         <h4>Written on: {article.created_at}</h4>
-                        <button>More</button>
+                        <Link to ="/article" >
+                            <button>More</button>
+                        </Link>
                     </section>)
                 })
             }
