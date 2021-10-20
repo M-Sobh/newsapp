@@ -18,8 +18,6 @@ export default function Comments({commentsCard}) {
                 )})
                 }
              </section>
-            
-
         </section>
     )
 }
