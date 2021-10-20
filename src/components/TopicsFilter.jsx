@@ -1,23 +1,15 @@
-import {getTopics} from '../utils/api';
-import {useState, useEffect} from 'react';
 
-
-export default function TopicsFilter() {
-    const [topic, setTopic] = useState([]);
-  
-    useEffect(() =>{
-        getTopics()
-        .then((res) =>{
-            setTopic(res)
-        })
-    },[])
+export default function TopicsFilter({topic}) {
+   
     return (
         <div>
             <select className='topic-filter'>
                 <option>--Please Select a Topic--</option>
                 {
                     topic.map((topicName) => {
-                       return <option key={topicName.slug}>{topicName.slug}</option>
+                       return <option key={topicName.slug}>
+                           {topicName.slug}
+                           </option>
 
                     })
                 }
