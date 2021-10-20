@@ -1,16 +1,21 @@
 
-export default function TopicsFilter({topic}) {
-   
+export default function TopicsFilter({ topics, setTopic}) {
+
+   const topicHandler = (e) =>{
+       setTopic(e.target.value)
+   }
+
     return (
         <div>
-            <select className='topic-filter'>
-                <option>--Please Select a Topic--</option>
+            <select className='topic-filter' onChange = {topicHandler} >
+                <option value =''>--Please Select a Topic--</option>
                 {
-                    topic.map((topicName) => {
-                       return <option key={topicName.slug}>
-                           {topicName.slug}
-                           </option>
-
+                    topics.map((topicName) => {
+                       return (
+                            <option key={topicName.slug} value ={topicName.slug}>
+                                {topicName.slug}
+                            </option>
+                            )
                     })
                 }
             </select>
