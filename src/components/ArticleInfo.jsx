@@ -29,8 +29,8 @@ export default function ArticleInfo() {
                         <button>Vote</button>
                         <button>Comment</button>
                         <span>{articleInfoCard.votes} Votes</span>
-                        <Link to = {`/articles/${article_id}/comments`}>
-                            <span>{articleInfoCard.comment_count} Comments</span><br/>
+                        <Link to = {`/articles/${article_id}/comments`} className="comments-link">
+                            <span >{articleInfoCard.comment_count} Comments</span><br/>
                         </Link>
                         <input type = 'text'></input>
                     </section>

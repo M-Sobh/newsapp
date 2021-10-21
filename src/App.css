@@ -38,6 +38,7 @@
 .comment-sec {
   border: 2px solid pink;
   width: 80%;
+  margin: 20px;
 }
 .comment {
   border: 2px solid black;
@@ -50,4 +51,8 @@ button {
 }
 span {
   margin: 10px;
+}
+.comments-link {
+  text-decoration-line: none;
+  color: black;
 }

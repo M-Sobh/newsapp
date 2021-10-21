@@ -9,15 +9,14 @@ export default function Comments() {
 
     useEffect(() => {
         getCommentsByArticle(article_id).then((res) => {
-            console.log(res,'<=====res from getComments')
             setCommentCards(res);
         })
     },[article_id])
 
     return (
         <section>
-            <h2>Comments</h2>
             <section className="comment-sec">
+                <h2>Comments</h2>   
                 {commentCards.map((card) => {
                     return (
                     <section className='comment' key = {card.comment_id}>
