@@ -31,4 +31,23 @@
 }
 .article-info {
   border: 2px solid black;
+  padding: 20px;
+  width: 80%;
+  margin: 20px;
+}
+.comment-sec {
+  border: 2px solid pink;
+  width: 80%;
+}
+.comment {
+  border: 2px solid black;
+  width: 80%;
+  margin: 20px;
+  padding: 10px;
+}
+button {
+  margin: 10px;
+}
+span {
+  margin: 10px;
 }

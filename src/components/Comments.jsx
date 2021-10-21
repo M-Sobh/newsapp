@@ -20,7 +20,7 @@ export default function Comments() {
             <section className="comment-sec">
                 {commentCards.map((card) => {
                     return (
-                    <section key = {card.comment_id}>
+                    <section className='comment' key = {card.comment_id}>
                         <h3>{card.author} </h3>
                         <h4>{card.created_at}</h4>
                         <p>{card.body}</p>

@@ -22,15 +22,15 @@ export default function ArticleInfo() {
             {
                 <section className="article-info">
                     <h2>{articleInfoCard.title}</h2>
-                    <h4>{articleInfoCard.author}</h4>
-                    <h4>{articleInfoCard.topic}</h4>
-                    <h4>{articleInfoCard.created_at}</h4>
+                    <h4>Written By: {articleInfoCard.author}</h4>
+                    <h4>On :{articleInfoCard.created_at}</h4>
+                    <h4>Topic: {articleInfoCard.topic}</h4>                  
                     <p>{articleInfoCard.body}</p>
                     <section>
                         <button>Vote</button>
                         <button>Comment</button>
-                        <span>{articleInfoCard.votes}</span>
-                        <span>{articleInfoCard.comment_count}</span><br/>
+                        <span>{articleInfoCard.votes} Votes</span>
+                        <span>{articleInfoCard.comment_count} Comments</span><br/>
                         <input type = 'text'></input>
                     </section>
                 </section>  
