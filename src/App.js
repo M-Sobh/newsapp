@@ -4,12 +4,16 @@ import Header from "./components/Header";
 import ArticlesList from "./components/ArticlesList";
 import ArticleInfo from "./components/ArticleInfo";
 import Comments from "./components/Comments";
+import Home from "./components/Home";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
         <Route exact path="/articles">
           <ArticlesList />
         </Route>
