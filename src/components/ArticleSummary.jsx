@@ -11,7 +11,7 @@ export default function ArticleSummary({articlesList}) {
                         <h3>{article.title}</h3>
                         <h4>Author: {article.author}</h4>
                         <h4>Written on: {article.created_at}</h4>
-                        <Link to ="/article" >
+                        <Link to = {`/articles/${article.article_id}`} >
                             <button>More</button>
                         </Link>
                     </section>)

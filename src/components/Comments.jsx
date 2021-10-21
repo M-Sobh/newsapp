@@ -1,9 +1,24 @@
-export default function Comments({commentsCard}) {
+import {useState, useEffect} from 'react';
+import {  getCommentsByArticle } from "../utils/api";
+import { useParams} from "react-router-dom";
+
+export default function Comments() {
+
+    const [commentCards, setCommentCards] = useState([]);
+    const {article_id} = useParams();
+
+    useEffect(() => {
+        getCommentsByArticle(article_id).then((res) => {
+            console.log(res,'<=====res from getComments')
+            setCommentCards(res);
+        })
+    },[article_id])
+
     return (
         <section>
             <h2>Comments</h2>
             <section className="comment-sec">
-                {commentsCard.map((card) => {
+                {commentCards.map((card) => {
                     return (
                     <section key = {card.comment_id}>
                         <h3>{card.author} </h3>

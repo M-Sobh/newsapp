@@ -15,9 +15,8 @@ export const getArticlesByTopic = async (topicName) => {
 };
 
 export const getArticleById = async (article_id) => {
-  const { data } = await newsApi.get(`/articles/${article_id}`);
-  console.log(data, "<=======data");
-  return data.article;
+  const response = await newsApi.get(`/articles/${article_id}`);
+  return response.data.article;
 };
 
 export const getCommentsByArticle = async (article_id) => {
