@@ -20,19 +20,22 @@ export default function ArticleInfo() {
     return (<section >
             {
                 <section className="article-info">
-                    <h2>{articleInfoCard.title}</h2>
-                    <h4>Written By: {articleInfoCard.author}</h4>
-                    <h4>On :{articleInfoCard.created_at}</h4>
-                    <h4>Topic: {articleInfoCard.topic}</h4>                  
-                    <p>{articleInfoCard.body}</p>
-                    <section>
-                        <button>Vote</button>
-                        <button>Comment</button>
-                        <span>{articleInfoCard.votes} Votes</span>
-                        <Link to = {`/articles/${article_id}/comments`} className="comments-link">
-                            <span >{articleInfoCard.comment_count} Comments</span><br/>
-                        </Link>
-                        <input type = 'text'></input>
+                    <section className="article-card">
+                        <h2>{articleInfoCard.title}</h2>
+                        <h4>Written By: {articleInfoCard.author}</h4>
+                        <h4>On :{articleInfoCard.created_at}</h4>
+                        <h4>Topic: {articleInfoCard.topic}</h4>                  
+                        <p>{articleInfoCard.body}</p>
+                        <section>
+                            <button>Vote</button>
+                            <button>Comment</button>
+                            <span>{articleInfoCard.votes} Votes</span>
+                            <Link to = {`/articles/${article_id}/comments`} className="comments-link">
+                                <span >{articleInfoCard.comment_count} Comments</span><br/>
+                            </Link>
+                            <input type = 'text'></input>
+                        
+                        </section>
                     </section>
                 </section>  
             }

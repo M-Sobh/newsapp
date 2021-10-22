@@ -42,6 +42,7 @@
   border: 2px solid black;
   padding: 20px;
   width: 80%;
+  height: 1000px;
   margin: 20px;
   background-color: white;
   box-shadow: 10px 10px cornflowerblue;
@@ -77,3 +78,17 @@ span {
   min-width: 100%;
   min-height: 100%;
 } */
+.home {
+  min-width: 100%;
+  height: 1000px;
+}
+
+.nav-links {
+  text-decoration: none;
+  padding: 20px;
+  margin: 2px;
+  color: black;
+}
+
+.article-card {
+}
