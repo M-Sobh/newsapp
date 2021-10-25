@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom"
-import 'materialize-css';
-import {Button} from 'react-materialize';
+import Button from '@mui/material/Button';
 
  const Header = () => {
     return <nav>
-            <div className ='nav-wrapper'>
-                <a href="#" className="brand-logo">Logo</a>
-                <ul id="nav-mobile" className="right hide-on-med-and-down">
+            <div className =''>
+                <a href="/" className="">Logo</a>
+                <ul id="nav-mobile" className="">
                  <li>
                         <Link to ='/' >Home</Link>
                  </li> 
@@ -14,6 +13,7 @@ import {Button} from 'react-materialize';
                         <Link to ='/articles' >Articles</Link>
                  </li>
                 </ul>
+                
             </div>
         </nav>
 }
