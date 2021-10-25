@@ -1,12 +1,20 @@
 import { Link } from "react-router-dom"
+import 'materialize-css';
+import {Button} from 'react-materialize';
 
  const Header = () => {
-    return <nav className ='header'>
-            <h1>Logo</h1>
-            <span >
-            <Link to ='/' className='nav-links'>Home</Link>
-            <Link to ='/articles' className='nav-links'>Articles</Link>
-            </span>
+    return <nav>
+            <div className ='nav-wrapper'>
+                <a href="#" className="brand-logo">Logo</a>
+                <ul id="nav-mobile" className="right hide-on-med-and-down">
+                 <li>
+                        <Link to ='/' >Home</Link>
+                 </li> 
+                 <li>
+                        <Link to ='/articles' >Articles</Link>
+                 </li>
+                </ul>
+            </div>
         </nav>
 }
 export default Header;
