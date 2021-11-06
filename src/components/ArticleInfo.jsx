@@ -16,7 +16,7 @@ export default function ArticleInfo() {
     },[article_id])
 
   
-
+//console.log(articleInfoCard.created_at.slice(0,9), '<======');
     return (<section >
             {
                 <section className="article-info">

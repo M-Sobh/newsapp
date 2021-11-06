@@ -21,7 +21,7 @@ export default function Comments() {
                     return (
                     <section className='comment' key = {card.comment_id}>
                         <h3>{card.author} </h3>
-                        <h4>{card.created_at}</h4>
+                        <h4>{card.created_at.slice(0, 10)}</h4>
                         <p>{card.body}</p>
                         <span>
                             <button>-</button>
